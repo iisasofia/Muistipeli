@@ -1,0 +1,5 @@
+ html {
+    line-height: 2.12; /* 1 */
+    -webkit-text-size-adjust: 80%; /* 2 */
+  }
+  
