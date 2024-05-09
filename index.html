@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUISTIPELI</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <div class="control-buttons">
+      <span>Aloita peli</span>
+    </div>
+    <div id="win-screen" class="win-screen">
+      <div>VOITIT</div>
+      <div id="your-time"></div>
+    </div>
+    <div id="another-game-btn">Pelaa uudelleen</div>
+    <div class="info-container">
+      <div class="name">Tervehdys : <span></span></div>
+      <div class="stopwatch">00:00:000</div>
+      <div class="tries">Väärät siirrot: <span>0</span></div>
+    </div>
+    <div class="memory-game-blocks">
+      <div class="game-block" data-kuva-data="omena">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/1.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="omena">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/1.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="huulet">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/2.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="huulet">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/2.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="banaani">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/3.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="banaani">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/3.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="mansikka">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/4.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="mansikka">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/4.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="paa">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/5.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="paa">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/5.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="paperi">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/6.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="paperi">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/6.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="mustekkala">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/7.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="mustekkala">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/7.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="morko">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/8.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="morko">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/8.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="tytto">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/9.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="tytto">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/9.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="kissa">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/10.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-kuva-data="kissa">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="kuvat/10.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <table class="result-table">
+      <thead>
+        <tr>
+          <th>LUKU</th>
+          <th>NIMI</th>
+          <th>AIKA</th>
+          <th>YRITYKSET</th>
+        </tr>
+      </thead>
+      <tbody id="player-table-body"></tbody>
+    </table>¨
+
+    <canvas id="my-canvas"></canvas>
+
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
