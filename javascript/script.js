@@ -187,7 +187,7 @@ async function newPlayer() {
     results.push(newPlayer);
   }
 
-  window.localStorage.setItem("pelit", JSON.stringify(results));
+  window.localStorage.setItem("games", JSON.stringify(results));
   showPlayer();
 }
 
@@ -199,10 +199,10 @@ function showPlayer() {
   for (let i = 0; i < results.length; i++) {
     playerTable += `
       <tr>
-        <td id="kierros">${i + 1}</td>
-        <td id="pelaaja nimi">${results[i].playerName}</td>
-        <td id="pelaajan aika">${results[i].playerTime}</td>
-        <td id="väärät yritykset">${results[i].playerWrongTries}</td>
+        <td id="rank">${i + 1}</td>
+        <td id="playar-name">${results[i].playerName}</td>
+        <td id="player-time">${results[i].playerTime}</td>
+        <td id="player-wrong-tries">${results[i].playerWrongTries}</td>
       </tr>
     `;
   }
