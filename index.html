@@ -5,147 +5,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MUISTIPELI</title>
-
-    <link rel="stylesheet" href="css/style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="css/muotoilu.css" />
+    <link rel="stylesheet" href="css/style.css" /> 
   </head>
   <body>
     <div class="control-buttons">
-      <span>Aloita peli</span>
+      <span>ALOITA PELI</span>
     </div>
     <div id="win-screen" class="win-screen">
-      <div>VOITIT</div>
+      <div>SINÄ VOITIT</div>
       <div id="your-time"></div>
     </div>
-    <div id="another-game-btn">Pelaa uudelleen</div>
+    <div id="another-game-btn">PELAA UUDELLEEN</div>
     <div class="info-container">
-      <div class="name">Tervehdys : <span></span></div>
+      <div class="name">TERVEHDYS: <span></span></div>
       <div class="stopwatch">00:00:000</div>
-      <div class="tries">Väärät siirrot: <span>0</span></div>
+      <div class="tries">Väärät yritykset: <span>0</span></div>
     </div>
-    <div class="memory-game-blocks">
-      <div class="game-block" data-kuva-data="omena">
+    <div class="kortit">
+      <div class="kortti" data-emoji="kokki">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/1.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="omena">
+      <div class="kortti" data-emoji="kokki">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/1.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="huulet">
+      <div class="kortti" data-emoji="hei">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/2.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="huulet">
+      <div class="kortti" data-emoji="hei">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/2.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="banaani">
+      <div class="kortti" data-emoji="frog">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/3.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="banaani">
+      <div class="kortti" data-emoji="frog">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/3.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="mansikka">
+      <div class="kortti" data-emoji="rahapaja">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/4.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="mansikka">
+      <div class="kortti" data-emoji="rahapaja">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/4.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="paa">
+      <div class="kortti" data-emoji="sydän">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/5.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="paa">
+      <div class="kortti" data-emoji="sydän">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/5.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="paperi">
+      <div class="kortti" data-emoji="jees">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/6.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="paperi">
+      <div class="kortti" data-emoji="jees">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/6.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="mustekkala">
+      <div class="kortti" data-emoji="kyl">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/7.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="mustekkala">
+      <div class="kortti" data-emoji="kyl">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/7.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="morko">
+      <div class="kortti" data-emoji="smart">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/8.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="morko">
+      <div class="kortti" data-emoji="smart">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/8.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="tytto">
+      <div class="kortti" data-emoji="ihana">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/9.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="tytto">
+      <div class="kortti" data-emoji="ihana">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/9.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="kissa">
+      <div class="kortti" data-emoji="täh">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/10.png" alt="" />
         </div>
       </div>
-      <div class="game-block" data-kuva-data="kissa">
+      <div class="kortti" data-emoji="täh">
         <div class="face front"></div>
         <div class="face back">
           <img src="kuvat/10.png" alt="" />
@@ -159,14 +151,11 @@
           <th>LUKU</th>
           <th>NIMI</th>
           <th>AIKA</th>
-          <th>YRITYKSET</th>
+          <th>VÄÄRÄT YRITYKSET</th>
         </tr>
       </thead>
       <tbody id="player-table-body"></tbody>
-    </table>¨
-
-    <canvas id="my-canvas"></canvas>
-
+    </table>
     <script src="javascript/script.js"></script>
   </body>
 </html>
