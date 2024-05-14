@@ -1,6 +1,6 @@
 /*peli alkaa*/
 document.querySelector(".control-buttons span").onclick = function () {
-    let yourName = prompt("Kirjoita nimeni:");
+    let yourName = prompt("Lisää nimi:");
     if (yourName == null || yourName == "") {
       document.querySelector(".name span").innerHTML = "Anonyymi";
     } else {
